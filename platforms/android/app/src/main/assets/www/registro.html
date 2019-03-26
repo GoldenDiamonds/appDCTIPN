@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petróleos Mexicanos</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/Personal.js"></script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="PEMEX DCTIPN">
+<meta name="application-name" content="PEMEX DCTIPN">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+
+<!--Inicio de page principal-->
+	<div data-role ="page" id="registro" data-add-back-btn= true>
+		<div data-role="header" class="nav-glyphish-example" data-theme="b" id="header0" data-position="fixed">
+			<h4 style="text-align:center;">Petróleos Mexicanos</h4>
+			<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+		    <!--
+		    <ul>
+			    	<li><a href="index.html" id="inicio0" data-icon="home" data-transition="slide">INICIO</a></li>
+					<li><a href="index.html#productos" id="productos0" data-icon="shop" data-transition="slide">PRODUCTOS</a></li>
+		        	<li><a href="index.html#ubicacion" id="ubicacion0" data-icon="location" data-transition="slide">UBICACIÓN</a></li>
+						<li><a href="index.html#quienes_somos" id="acerca_de0" data-icon="info" data-transition="slide">ACERCA DE</a></li>
+						<li>
+
+						<a href="#popupLogin0" id="login0" data-rel="popup" data-position-to="window"
+						data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+
+							<div data-role="popup" id="popupLogin0" data-theme="a" class="ui-corner-all">
+							    <form>
+							        <div style="padding:10px 20px;">
+							            <h3>INICIO DE SESIÓN</h3>
+							            <label for="user0" class="ui-hidden-accessible">Username:</label>
+							            <input name="user0" id="user0" value="" placeholder="usuario" data-theme="a" type="text">
+							            <label for="pass0" class="ui-hidden-accessible">Password:</label>
+							            <input name="pass0" id="pass0" value="" placeholder="contraseña" data-theme="a" type="password">
+							            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+														Entrar
+													</button>
+													¿No tienes cuenta?
+													<br>
+													<a href="registro.php">Registrarse</a>
+													
+							        </div>
+							    </form>
+							</div>
+						</li>
+		    </ul>
+		-->
+		  </div>
+		</div>
+		<!--Inicio de Content-->
+		<div data-role="content">
+	      <!--<form action="../controller/registroUsuario.php" method="post">-->
+	        <h3>Registro de usuario</h3>
+	        <div data-role="fieldcontain">
+	          <label for="ficha"><strong>Ficha</strong></label>
+	          <input type="text" name="ficha" id="ficha" required/>
+	        </div>
+	        <div data-role="fieldcontain">
+	          <label for="password"><strong>Contraseña</strong></label>
+	          <input type="password" name="password" id="password" required/>
+	        </div>
+	        <div data-role="fieldcontain">
+	          <label for="nombre"><strong>Nombre</strong></label>
+	          <input type="text" name="nombre" id="nombre" required/>
+	        </div>
+	        <div data-role="fieldcontain">
+	          <label for="apellidos"><strong>Apellidos</strong></label>
+	          <input type="text" name="apellidos" id="apellidos" required/>
+	        </div>
+	        <!--
+	        <div data-role="fieldcontain">
+	          <input type="submit" name="submit" value="Enviar" />
+	        </div>
+			-->
+			
+	        <button type="button" id="addUsuario" onclick="addUsuario();">Añadir usuario</button>
+	        
+			  <div id="listarUsuariosholder">
+			       <h3>Lista de usuarios</h3>
+			       <h6>
+			       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMatrícula&nbsp
+			       &nbsp&nbsp&nbspPassword&nbsp&nbsp&nbspUsuario&nbsp&nbsp
+			       &nbsp&nbspNombre&nbsp&nbsp&nbsp&nbsp&nbspCorreo
+			       </h6>
+			      <ul id="lista_Usuarios"></ul>
+			  </div>
+			
+			 <!--
+			<form>
+			    <input id="filterTable-input" data-type="search">
+			</form>
+			<table data-role="table" id="movie-table" data-filter="true" data-input="#filterTable-input" class="ui-responsive">
+			    <thead>
+			        <tr>
+			            <th data-priority="1">Usuario</th>
+			            <th data-priority="persist">Password</th>
+			            <th data-priority="2">Nombre</th>
+			            <th data-priority="3">Apellidos</th>
+			        </tr>
+			        </thead>
+			        <tbody>
+			            <tr>
+			                <td id="lista_Usuarios"></td>
+			            </tr>
+			        </tbody>
+			    </table>
+			   
+	      </form>
+	      -->
+	    </div>
+	    <div data-role="footer" data-theme="b" data-position="fixed">
+			<center>
+			DCTIPN &copy; 2019 Todos los derechos reservados
+			</center>
+		</div>
+	</div>
+</body>
+</html>
