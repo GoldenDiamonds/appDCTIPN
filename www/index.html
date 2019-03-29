@@ -3,131 +3,471 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Petróleos Mexicanos</title>
+<title>PEMEX</title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 <script src="js/jquery.js"></script>
-<!--<script src="js/index.js"></script>-->
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script src="js/Personal.js"></script>
 
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<script src="js/PersonalFilter.js"></script>
+<script src="js/PersonalFilter1.js"></script>
+<script src="js/SitiosFilter.js"></script>
+<script src="js/SitiosFilter1.js"></script>
+<script src="js/VehiculosFilter.js"></script>
+<script src="js/VehiculosFilter1.js"></script>
+<script src="js/PasesFilter.js"></script>
+<script src="js/PasesFilter1.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
 <meta name="apple-mobile-web-app-title" content="PEMEX DCTIPN">
 <meta name="application-name" content="PEMEX DCTIPN">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
 
-
 </head>
 <body>
 
 <!--Inicio de page principal-->
-	<div data-role ="page" id="registro" data-add-back-btn= true>
-		<div data-role="header" class="nav-glyphish-example" data-theme="b" id="header0" data-position="fixed">
-			<h4 style="text-align:center;">Petróleos Mexicanos</h4>
-			<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-		    <!--
-		    <ul>
-			    	<li><a href="index.html" id="inicio0" data-icon="home" data-transition="slide">INICIO</a></li>
-					<li><a href="index.html#productos" id="productos0" data-icon="shop" data-transition="slide">PRODUCTOS</a></li>
-		        	<li><a href="index.html#ubicacion" id="ubicacion0" data-icon="location" data-transition="slide">UBICACIÓN</a></li>
-						<li><a href="index.html#quienes_somos" id="acerca_de0" data-icon="info" data-transition="slide">ACERCA DE</a></li>
-						<li>
+<div data-role ="page" id="inicio" data-add-back-btn= true>
 
-						<a href="#popupLogin0" id="login0" data-rel="popup" data-position-to="window"
-						data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+	<!--
+	<div data-role="header" class="nav-glyphish-example" data-theme="a" id="nav" data-position="fixed">
+	-->
+	<!--
+	<h4 style="text-align:center;">PEMEX</h4>-->
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="d" data-position="fixed">
+			<ul>
+				<li><a href="#inicio" id="inicio0" data-icon="home" data-transition="slide">Inicio</a></li>
+				<li><a href="#personal" id="personal0" data-icon="user" data-transition="slide">Personal</a></li>
+				<li><a href="#sitios" id="sitios0" data-icon="location" data-transition="slide">Sitios</a></li>
+				<li><a href="#pases" id="vehiculos0" data-icon="info" data-transition="slide">Pases</a></li>
+				<li>
+					<a href="#popupLogin" id="login" data-rel="popup" data-position-to="window"
+					data-icon="lock" data-transition="pop">INICIAR SESIÓN</a>
 
-							<div data-role="popup" id="popupLogin0" data-theme="a" class="ui-corner-all">
-							    <form>
-							        <div style="padding:10px 20px;">
-							            <h3>INICIO DE SESIÓN</h3>
-							            <label for="user0" class="ui-hidden-accessible">Username:</label>
-							            <input name="user0" id="user0" value="" placeholder="usuario" data-theme="a" type="text">
-							            <label for="pass0" class="ui-hidden-accessible">Password:</label>
-							            <input name="pass0" id="pass0" value="" placeholder="contraseña" data-theme="a" type="password">
-							            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
-														Entrar
-													</button>
-													¿No tienes cuenta?
-													<br>
-													<a href="registro.php">Registrarse</a>
-													
-							        </div>
-							    </form>
+					<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+						<form>
+							<div style="padding:10px 20px;">
+								<h3>INICIO DE SESIÓN</h3>
+								<label for="user" class="ui-hidden-accessible">Username:</label>
+								<input name="user" id="user" value="" placeholder="usuario" data-theme="a" type="text">
+								<label for="pass" class="ui-hidden-accessible">Password:</label>
+								<input name="pass" id="pass" value="" placeholder="contraseña" data-theme="a" type="password">
+								<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+									Entrar
+								</button>
+								¿No tienes cuenta?
+								<br>
+								<a href="registro.html">Registrarse</a>
 							</div>
-						</li>
-		    </ul>
-		-->
-		  </div>
+						</form>
+					</div>
+				</li>
+			</ul>
 		</div>
+		<!--</div>-->
+
+		<!--Inicio de Content-->
+		<div data-role="content" style="background-color: #8888FF">
+			<h3><strong><center>BIENVENIDO A PEMEX DCTI</center></strong></h3></p>
+			<center>
+
+				<!--background-color: #CCCCCC -->
+				<img src="img\logo.png" width="31.5%" height="28.5%" style="border-color: #FFFF00" align="center">
+
+			</center>
+			<p><h3><strong><center>DESCRIPCIÓN DE LA APLICACIÓN </center></strong></h3></p>
+			<p align="justify"><h4>Esta aplicación es encargada de llevar el control del departamento de telecom, para registro de personal, sitios, registro de vehículos y salidas a campo de trabajadores</h4></p>
+			<!--Inicio de 1er colapsable Personal-->
+			<div data-role ="collapsible" data-theme="a" data-content-them="a" data-collapsed="true" style="background-color: #BBBCCC ">
+				<p style="text-align: center;"><h3><center>Personal</center></center></h3></p>
+				<p align="justify">El <strong>Personal</strong> es aquel que se encuentra actualmente laborando.</p>
+				<form>
+			    <input id="filterTable-input0" data-type="search">	
+				<table data-role="table" id="movie-table0" data-filter="true" data-input="#filterTable-input0" data-mode="columntoggle" data-column-btn-text="Mostrar" class="ui-responsive">
+					    <thead>
+						        <tr>
+							            <th data-priority="1">Ficha</th>
+							            <th data-priority="persist">Nombre</th>
+							            <th data-priority="2">Categoria</th>
+							            <th data-priority="3">Nivel</th>
+						        </tr>
+					        </thead>				
+					        <tbody id="listaPersonal"></tbody>
+					        </tbody>			
+				    </table>			   
+				</form>
+	</div>
+
+	<!--Fin de 1er Colapsable-->
+
+	<!--Inicio de 2do Colapsable  Sitios-->
+	<div data-role="collapsible" data-theme="a" data-content-theme="e" data-collapsed="true" style="background-color: #FFFFFF">
+		<p style="text-align: center;"><h3><center>Sitios</center></center></h3></p>
+		<!--<p><img  style="float: right; margin: 5px;" src="img/mini.jpg" align="center" width="35%" height="20%"></p>-->
+		<p align="justify">Los <strong>Sitios</strong> son aquellos en donde el <k>Personal</k> realiza trabajo de campo.</p>
+		<form>
+		    <input id="filterTable-input1" data-type="search">
+		</form>
+		<table data-role="table" id="movie-table1" data-filter="true" data-input="#filterTable-input1" data-mode="columntoggle" data-column-btn-text="Mostrar" class="ui-responsive">
+	    <thead>
+	        <tr>
+	            <th data-priority="1">Sitio</th>
+	        </tr>
+	        </thead>
+	        <tbody id="listaSitiosTable">
+	        </tbody>
+	    </table>
+	</div>
+	<!--Fin de 2do Colapsable-->
+
+	<!--Inicio de 3er Colapsable Vehículos.-->
+	<div data-role="collapsible" data-theme="a" data-content-theme="e" data-collapsed="true" style="background-color: #FFFFFF">
+		<meta charset="utf-8">
+		<p style="text-align: center;"><h3><center>Vehículos</center></center></h3></p>
+
+		<p align="justify">Los <strong>Vehículos</strong> son propietarios o arrendados por PEMEX&copy; y son asignados al personal para realizar sus salidas de campo.</p>
+		<form>
+	    <input id="filterTable-input2" data-type="search">	
+		<table data-role="table" id="movie-table2" data-filter="true" data-input="#filterTable-input2" data-mode="columntoggle" data-column-btn-text="Mostrar" class="ui-responsive">
+		    <thead>
+			        <tr>
+			            <th data-priority="1">NumEcon</th>
+			            <th data-priority="persist">Placas</th>
+			            <th data-priority="1">Marca</th>
+						<th data-priority="1">Año</th>
+			            <th data-priority="2">NumSerie</th>
+			        </tr>
+		        </thead>				
+		        <tbody id="listaVehiculo"></tbody>
+		        </tbody>			
+		    </table>			   
+		</form>
+
+	</div>
+	<!--Fin de 3er Colapsable-->
+
+	<!--Inicio de 4ta Colapsable Pases.-->
+	<div data-role="collapsible" data-theme="a" data-content-theme="e" data-collapsed="true" style="background-color: #FFFFFF">
+		<meta charset="utf-8">
+		<p style="text-align: center;"><h3><center>Pases</center></center></h3></p>
+
+		<p align="justify">Los <strong>Pases de salida</strong> son creados para justificar la salida de personal
+		interno de PEMEX&copy; a trabajo de campo</p>
+
+		<form>
+    	    <input id="filterTable-input3" data-type="search">
+	    </form>
+	    <table data-role="table" id="movie-table3" data-filter="true" data-input="#filterTable-input3" data-mode="columntoggle" data-column-btn-text="Mostrar" class="ui-responsive">
+	    	    <thead>
+			        <tr>
+				    <th data-priority="1">Fecha</th>
+				    <th>Ficha</th>
+				    <th>Actividad</th>
+				    <th data-priority="1">Coche</th>
+	    			<th data-priority="2">Destino</th>
+	    			<th data-priority="2">Material</th>
+	    			<th data-priority="2">Combust.</th>
+	    			<th data-priority="3">Km.</th>
+	    			<th data-priority="3">HoraSalida</th>
+	    		    </tr>
+	    	        </thead>
+	    	        <tbody id="listaPasesHolder">
+	    		
+	    	</tbody>
+	    </table>
+	</div>
+	<!--Fin de 4to Colapsable-->
+	</div>
+
+	<!--Footer de page principal-->
+	<div data-role="footer" data-theme="b" data-position="fixed">
+	<center>
+		DCTIPN &copy; 2019 Todos los derechos reservados
+	</center>
+	</div>
+
+	</div>
+	<!--Fin de page principal-->
+
+
+	<!--Sección de Personal-->
+	<div data-role="page" id="personal" style="background-color: #CCCCCC">
+	<div data-role="header" class="nav-glyphish-example" data-theme="b" id="header2" data-position="fixed">
+	<h4 style="text-align:center;">PEMEX</h4>
+	<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+		<ul>
+			<li><a href="#inicio" id="inicio1" data-icon="home" data-transition="slide">Inicio</a></li>
+			<li><a href="#personal" id="personal1" data-icon="user" data-transition="slide">Personal</a></li>
+			<li><a href="#sitios" id="sitios1" data-icon="location" data-transition="slide">Sitios</a></li>
+			<li><a href="#pases" id="vehiculos1" data-icon="info" data-transition="slide">Pases</a></li>
+
+			<!--<li><a href="#" id="coffee" data-icon="custom">INICIAR SESIÓN</a></li>-->
+			<li>
+
+				<a href="#popupLogin2" id="login2" data-rel="popup" data-position-to="window"
+				data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+
+				<div data-role="popup" id="popupLogin2" data-theme="a" class="ui-corner-all">
+					<form>
+						<div style="padding:10px 20px;">
+							<h3>INICIO DE SESIÓN</h3>
+							<label for="user2" class="ui-hidden-accessible">Username:</label>
+							<input name="user2" id="user2" value="" placeholder="usuario" data-theme="a" type="text">
+							<label for="pass2" class="ui-hidden-accessible">Password:</label>
+							<input name="pass2" id="pass2" value="" placeholder="contraseña" data-theme="a" type="password">
+							<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+								Entrar
+							</button>
+							¿No tienes cuenta?
+							<br>
+							<a href="registro.html">Registrarse</a>
+						</div>
+					</form>
+				</div>
+			</li>
+		</ul>
+	</div>
+	</div>
+
+	<div data-role="content">
+	<!--<form action="../controller/registroUsuario.php" method="post">-->
+		<h3>Registro de personal</h3>
+		<div data-role="fieldcontain">
+			<label for="ficha"><strong>Ficha</strong></label>
+			<input type="text" name="ficha" id="ficha" required/>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="nombre"><strong>Nombre</strong></label>
+			<input type="text" name="nombre" id="nombre" required/>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="categoria"><strong>Categoria</strong></label>
+			<input type="text" name="categoria" id="categoria" required/>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="nivel"><strong>Nivel</strong></label>
+			<input type="text" name="nivel" id="nivel" required/>
+		</div>
+		<button type="button" id="addSitio" onclick="addPersonal1();">Añadir</button>
+			 
+			<form>
+		    <input id="filterTable-input" data-type="search">	
+			<table data-role="table" id="movie-table" data-filter="true" data-input="#filterTable-input" data-mode="columntoggle" data-column-btn-text="Mostrar" class="ui-responsive">
+				    <thead>
+					        <tr>
+						            <th data-priority="1">Ficha</th>
+						            <th data-priority="persist">Nombre</th>
+						            <th data-priority="2">Categoria</th>
+						            <th data-priority="3">Nivel</th>
+					        </tr>
+				        </thead>				
+				        <tbody id="listaPersonal1"></tbody>
+				        </tbody>			
+			    </table>			   
+			</form>
+
+	  
+	</div>
+
+			<div data-role="footer" data-theme="b" data-position="fixed">
+				<center>
+					DCTIPN &copy; 2019 Todos los derechos reservados
+				</center>
+			</div>
+		</div>
+		<!--Fin de sección de quienes somos-->
+		<!--Sección de Sitios-->
+	<div data-role="page" id="sitios" style="background-color: #CCCCCC">
+	<div data-role="header" class="nav-glyphish-example" data-theme="b" id="header2" data-position="fixed">
+	<h4 style="text-align:center;">PEMEX</h4>
+	<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+		<ul>
+			<li><a href="#inicio" id="inicio2" data-icon="home" data-transition="slide">Inicio</a></li>
+			<li><a href="#personal" id="personal2" data-icon="user" data-transition="slide">Personal</a></li>
+			<li><a href="#sitios" id="sitios2" data-icon="location" data-transition="slide">Sitios</a></li>
+			<li><a href="#pases" id="vehiculos2" data-icon="info" data-transition="slide">Pases</a></li>
+
+			<!--<li><a href="#" id="coffee" data-icon="custom">INICIAR SESIÓN</a></li>-->
+			<li>
+
+				<a href="#popupLogin2" id="login3" data-rel="popup" data-position-to="window"
+				data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+
+				<div data-role="popup" id="popupLogin3" data-theme="a" class="ui-corner-all">
+					<form>
+						<div style="padding:10px 20px;">
+							<h3>INICIO DE SESIÓN</h3>
+							<label for="user3" class="ui-hidden-accessible">Username:</label>
+							<input name="user3" id="user3" value="" placeholder="usuario" data-theme="a" type="text">
+							<label for="pass3" class="ui-hidden-accessible">Password:</label>
+							<input name="pass3" id="pass3" value="" placeholder="contraseña" data-theme="a" type="password">
+							<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+								Entrar
+							</button>
+							¿No tienes cuenta?
+							<br>
+							<a href="registro.html">Registrarse</a>
+						</div>
+					</form>
+				</div>
+			</li>
+		</ul>
+	</div>
+	</div>
+			<!--
+			<a href="#inicio" data-transition="turn" data-icon="back">
+				Atras
+			</a>
+		-->
+
 		<!--Inicio de Content-->
 		<div data-role="content">
 	      <!--<form action="../controller/registroUsuario.php" method="post">-->
-	        <h3>Registro de personal</h3>
+	        <h3>Registro de sitios</h3>
 	        <div data-role="fieldcontain">
-	          <label for="ficha"><strong>Ficha</strong></label>
-	          <input type="text" name="ficha" id="ficha" required/>
+	          <label for="ciudad"><strong>Ciudad</strong></label>
+	          <input type="text" name="ciudad" id="ciudad" required/>
 	        </div>
-	        <div data-role="fieldcontain">
-	          <label for="nombre"><strong>Nombre</strong></label>
-	          <input type="text" name="nombre" id="nombre" required/>
-	        </div>
-	        <div data-role="fieldcontain">
-	          <label for="categoria"><strong>Categoria</strong></label>
-	          <input type="text" name="categoria" id="categoria" required/>
-	        </div>
-	        <div data-role="fieldcontain">
-	          <label for="nivel"><strong>Nivel</strong></label>
-	          <input type="text" name="nivel" id="nivel" required/>
-	        </div>
-	        <!--
-	        <div data-role="fieldcontain">
-	          <input type="submit" name="submit" value="Enviar" />
-	        </div>
-			-->
 			
-	        <button type="button" id="addPersonal" onclick="addPersonal();">Añadir</button>
-	        
-			  <div id="listaPersonal">
-			       <h3>Lista de personal</h3>
-			       <h6>
-			       &emsp;&emsp;&emsp;Ficha&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Nombre&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Categoria&emsp;&emsp;Nivel
-			       </h6>
-			      <ul id="lista_Personal"></ul>
-			  </div>
-			
-			 <!--
+	        <button type="button" id="addSitio" onclick="addSitio();">Añadir</button>
 			<form>
-			    <input id="filterTable-input" data-type="search">
+			    <input id="filterTable-inputS" data-type="search">
 			</form>
-			<table data-role="table" id="movie-table" data-filter="true" data-input="#filterTable-input" class="ui-responsive">
-			    <thead>
-			        <tr>
-			            <th data-priority="1">Usuario</th>
-			            <th data-priority="persist">Password</th>
-			            <th data-priority="2">Nombre</th>
-			            <th data-priority="3">Apellidos</th>
-			        </tr>
-			        </thead>
-			        <tbody>
-			            <tr>
-			                <td id="lista_Usuarios"></td>
-			            </tr>
-			        </tbody>
-			    </table>
-			   
-	      </form>
-	      -->
+			<table data-role="table" id="movie-tableS" data-filter="true" data-input="#filterTable-inputS" data-mode="columntoggle" data-column-btn-text="Mostrar" class="ui-responsive">
+		    <thead>
+		        <tr>
+		            <th data-priority="1">Sitio</th>
+		        </tr>
+		        </thead>
+		        <tbody id="listaSitiosTable1">
+
+		        </tbody>
+		    </table>
+
 	    </div>
-	    <div data-role="footer" data-theme="b" data-position="fixed">
-			<center>
+
+	<div data-role="footer" data-theme="b" data-position="fixed">
+		<center>
 			DCTIPN &copy; 2019 Todos los derechos reservados
-			</center>
+		</center>
+	</div>
+	</div>
+	<!--Fin de sección de ubicación-->
+
+
+	<!--Sección de Pases-->
+	<div data-role="page" id="pases">
+	<div data-role="header" class="nav-glyphish-example" data-theme="b" id="header4" data-position="fixed">
+		<h4 style="text-align:center;">PEMEX</h4>
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+			<ul>
+				<li><a href="#inicio" id="inicio3" data-icon="home" data-transition="slide">Inicio</a></li>
+				<li><a href="#personal" id="personal3" data-icon="user" data-transition="slide">Personal</a></li>
+				<li><a href="#sitios" id="sitios3" data-icon="location" data-transition="slide">Sitios</a></li>
+				<li><a href="#pases" id="vehiculos3" data-icon="info" data-transition="slide">Pases</a></li>
+				<li>
+
+					<a href="#popupLogin4" id="login4" data-rel="popup" data-position-to="window"
+					data-icon="user" data-transition="pop">INICIAR SESIÓN</a>
+
+					<div data-role="popup" id="popupLogin4" data-theme="a" class="ui-corner-all">
+						<form>
+							<div style="padding:10px 20px;">
+								<h3>INICIO DE SESIÓN</h3>
+								<label for="user4" class="ui-hidden-accessible">Username:</label>
+								<input name="user4" id="user4" value="" placeholder="usuario" data-theme="a" type="text">
+								<label for="pass4" class="ui-hidden-accessible">Password:</label>
+								<input name="pass4" id="pass4" value="" placeholder="contraseña" data-theme="a" type="password">
+								<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+									Entrar
+								</button>
+								¿No tienes cuenta?
+								<br>
+								<a href="registro.html">Registrarse</a>
+							</div>
+						</form>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
+
+
+	<div data-role="content">
+	<!--<form action="../controller/registroUsuario.php" method="post">-->
+	<h3>Registro de Pases</h3>
+	<div data-role="fieldcontain">
+		<label for="fecha"><strong>Fecha</strong></label>
+		<input type="text" name="fecha" id="fecha" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="ficha"><strong>Ficha</strong></label>
+		<input type="text" name="ficha" id="ficha" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="actividad"><strong>Actividad</strong></label>
+		<input type="text" name="actividad" id="actividad" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="vehiculo"><strong>Vehiculo</strong></label>
+		<input type="text" name="vehiculo" id="vehiculo" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="destinos"><strong>Destinos</strong></label>
+		<input type="text" name="destinos" id="destinos" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="material"><strong>Material</strong></label>
+		<input type="text" name="material" id="material" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="combustible"><strong>Combustible</strong></label>
+		<input type="text" name="combustible" id="combustible" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="kilometraje"><strong>Kilometraje</strong></label>
+		<input type="text" name="kilometraje" id="kilometraje" required/>
+	</div>
+	<div data-role="fieldcontain">
+		<label for="horaSalida"><strong>Hora de Salida</strong></label>
+		<input type="text" name="horaSalida" id="horaSalida" required/>
+	</div>
+	    <!--
+	    <div data-role="fieldcontain">
+	      <input type="submit" name="submit" value="Enviar" />
+	    </div>
+	-->
+
+	<button type="button" id="addPase" onclick="addPase();">Añadir</button>
+	<form>
+    	    <input id="filterTable-input6" data-type="search">
+    </form>
+    <table data-role="table" id="movie-table6" data-filter="true" data-input="#filterTable-input6" data-mode="columntoggle" data-column-btn-text="Mostrar" class="ui-responsive">
+    	    <thead>
+		        <tr>
+			    <th data-priority="1">Fecha</th>
+			    <th>Ficha</th>
+			    <th>Actividad</th>
+			    <th data-priority="1">Coche</th>
+    			<th data-priority="2">Destino</th>
+    			<th data-priority="2">Material</th>
+    			<th data-priority="2">Combust.</th>
+    			<th data-priority="3">Km.</th>
+    			<th data-priority="3">HoraSalida</th>
+    		        </tr>
+    	        </thead>
+    	        <tbody id="listaPasesHolder1">
+        </tbody>
+    </table>
+	</div>
+	<div data-role="footer" data-theme="b" data-position="fixed">
+		<center>
+			DCTIPN &copy; 2019 Todos los derechos reservados
+		</center>
+	</div>
+</div>
 </body>
 </html>
